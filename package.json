@@ -1,0 +1,38 @@
+{
+  "name": "money-keeper",
+  "version": "1.0.0",
+  "description": "轻松记账 - 个人财务管理工具",
+  "main": "electron/main.mjs",
+  "type": "module",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "dev:renderer": "vite",
+    "dev:electron": "wait-on http://localhost:5173 && electron .",
+    "dev": "concurrently \"npm:dev:renderer\" \"npm:dev:electron\"",
+    "build:renderer": "vite build",
+    "build": "node scripts/build.cjs",
+    "build:dir": "vite build && electron-builder --win --x64 --dir"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^6.3.2",
+    "antd": "^5.29.3",
+    "dayjs": "^1.11.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.4",
+    "recharts": "^2.15.4",
+    "sql.js": "^1.14.1",
+    "xlsx": "^0.18.5",
+    "zustand": "^4.5.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "concurrently": "^10.0.3",
+    "electron": "^31.7.7",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21",
+    "wait-on": "^9.1.0"
+  }
+}

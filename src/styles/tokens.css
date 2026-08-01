@@ -1,0 +1,74 @@
+/* ===== 轻松记账 — 设计令牌 ===== */
+
+:root {
+  /* ===== 品牌层 ===== */
+  --color-brand:            #1E4A4F;   /* 深苍青 — 侧栏背景、主按钮 */
+  --color-brand-light:      #E4EEF0;   /* 品牌浅色 — 选中态、hover */
+  --color-accent:           #C7493A;   /* 砖红 — 仅 HeroFigure 使用 */
+  --color-accent-light:     #FBEBE8;   /* 强调浅色 */
+
+  /* ===== dataviz chrome 层 ===== */
+  --color-chart-surface:    #FCFCFB;   /* 图表底色 */
+  --color-page:             #F9F9F7;   /* 应用背景 */
+  --color-surface:          #FCFCFB;   /* 卡片/面板 */
+  --color-ink-primary:      #0B0B0B;   /* 标题/正文 */
+  --color-ink-secondary:    #52514E;   /* 标签/元数据 */
+  --color-ink-muted:        #898781;   /* 轴刻度/占位符 */
+  --color-gridline:         #E1E0D9;   /* 网格线 */
+  --color-baseline:         #C3C2B7;   /* 轴线 */
+  --color-border:           rgba(11,11,11,0.10); /* 细线环 */
+
+  /* ===== 分类色板（dataviz 验证通过） ===== */
+  --cat-game:               #2a78d6;
+  --cat-medical:            #eb6834;
+  --cat-education:          #1baf7a;
+  --cat-travel:             #eda100;
+  --cat-daily:              #e87ba4;
+  --cat-other:              #008300;
+
+  /* ===== 间距 ===== */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  12px;
+  --space-lg:  16px;
+  --space-xl:  20px;
+  --space-2xl: 24px;
+  --space-3xl: 32px;
+  --space-4xl: 48px;
+  --space-5xl: 64px;
+
+  /* ===== 圆角 ===== */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* ===== 阴影 ===== */
+  --shadow-card:  0 1px 3px rgba(0,0,0,0.06);
+  --shadow-card-hover: 0 2px 8px rgba(0,0,0,0.10);
+
+  /* ===== 字体 ===== */
+  --font-ui: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+
+/* ===== Ant Design 主题覆盖 ===== */
+.ant-layout-sider {
+  background: var(--color-brand) !important;
+}
+
+.ant-menu-dark {
+  background: transparent !important;
+}
+
+.ant-menu-item-selected {
+  background: var(--color-brand-light) !important;
+  color: var(--color-brand) !important;
+}
+
+.ant-btn-primary {
+  background: var(--color-brand) !important;
+  border-color: var(--color-brand) !important;
+}
+
+.ant-btn-primary:hover {
+  opacity: 0.9;
+}

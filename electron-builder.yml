@@ -1,0 +1,22 @@
+appId: com.moneykeeper.app
+productName: 轻松记账
+directories:
+  output: release
+files:
+  - electron/**/*.mjs
+  - out/renderer/**/*
+  - package.json
+  - node_modules/**/*
+asar: true
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+  icon: resources/icon.png
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  shortcutName: 轻松记账
+npmRebuild: false
+electronDist: node_modules/electron/dist

@@ -1,0 +1,76 @@
+/* ===== 全局重置 ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-ink-primary);
+  background: var(--color-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== 滚动条美化 ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-secondary);
+}
+
+/* ===== 图表容器通用 ===== */
+.chart-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-xl);
+}
+
+.chart-card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* ===== 拖入高亮 ===== */
+body.drag-over {
+  outline: 2px dashed var(--color-brand);
+  outline-offset: -4px;
+}
+
+/* ===== 金额数字 ===== */
+.amount-num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== Hero 数字 ===== */
+.hero-figure {
+  font-size: 56px;
+  font-weight: 600;
+  color: var(--color-accent);
+  line-height: 1.1;
+  font-variant-numeric: proportional-nums;
+}
