@@ -13,6 +13,9 @@ win:
     - target: nsis
       arch: [x64]
   icon: resources/icon.png
+  # 跳过 winCodeSign 签名/编辑步骤，避免 Windows 无开发者模式时
+  # 解压 winCodeSign 报"无法创建符号链接"导致 NSIS 构建中断
+  signAndEditExecutable: false
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true
